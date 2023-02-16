@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: ./docker/app/Dockerfile
+    image: ${PROJECT_NAME}
+    container_name: ${PROJECT_NAME}-app
+    tty: true
+    volumes:
+      - './app/:/var/www/shop-symfony'
+    ports:
+      - '8081:8000'
