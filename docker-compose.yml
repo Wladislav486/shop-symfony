@@ -11,3 +11,24 @@ services:
       - './app/:/var/www/shop-symfony'
     ports:
       - '8081:8000'
+    depends_on:
+      - db
+    networks:
+      - shoplist
+  db:
+    image: postgres:12.5
+    restart: always
+    container_name: ${PROJECT_NAME}-db
+    environment:
+      POSTGRES_USER: shop
+      POSTGRES_PASSWORD: shop
+      POSTGRES_DB: shop_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./docker/db/:/var/lib/postgresql/data
+    networks:
+      - shoplist
+networks:
+  shoplist:
+    driver: bridge
