@@ -20,10 +20,3 @@
 
 ## Синтаксис файла READNE.md
 > https://gist.github.com/Jekins/2bf2d0638163f1294637
-
-## Курс по симфони
-1. Данный шаблон проекта предназначен для конкретного курса, версии программ устанновленны как в курсе.
-2. Сам курс, необходим доступ.
-> https://drive.google.com/drive/u/1/folders/1sCxnGFcZAK6YsyOinVphcZEyX2cGVgXM
-3. Прохожу курс в этом репозетории
-> https://github.com/Wladislav486/shop-symfony-practic
