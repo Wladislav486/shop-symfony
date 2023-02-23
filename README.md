@@ -15,7 +15,8 @@
 2. Зайти в контейнер в интерактивном режиме: docker exec -it container_name bash
 3. Настроить https: symfony server:ca:install
 4. Запустить сервер: symfony serve
-5. Если необходимо работать с файлами бд то необ
+5. Если необходимо работать с файлами бд то необходимо поменять права на доступ к папке /var/lib/postgresql/data
+> docker-compose exec db chmod 777 -R /var/lib/postgresql/data 
 
 ## Синтаксис файла READNE.md
 > https://gist.github.com/Jekins/2bf2d0638163f1294637
