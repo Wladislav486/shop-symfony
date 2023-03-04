@@ -42,7 +42,7 @@
    git config --global user.email "you@example.com"`
 5. Установил symfony  
    `symfony new --version=5.2 --dir=./ --full`
-6. Удалил лишние файлы
+6. Удалил лишние файлы из корня проекта
 + .git
 + docker-compose.override.yml
 + docker-compose.yml
